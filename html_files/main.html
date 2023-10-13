@@ -1,21 +1,23 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Hello Cats Website</title>
-  <link rel="stylesheet" type="text/css" href="static/css/styles.css"> <!-- Linking the CSS file -->
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 
-
 <body>
   <div class="header">
-    <div style= "padding: 15px;">Best for cats</div>
+    <div style="padding: 15px;">Best for cats</div>
   </div>
 
   <div class="container">
     <h1 style="text-align: center;">Get a name for your pet!!!</h1>
-    <input id="text-field" class="input-field" type="text" readonly>
+
+    <input id="text-field" class="input-field" type="text"> <!-- Add the class for styling -->
+
+    <div class="output-container"> <!-- Add a container for generated names-->
+    </div>
     <button id="ok-button" class="button">Generate petname</button>
   </div>
 

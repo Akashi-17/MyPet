@@ -10,7 +10,7 @@ from  Handlers.PetNameHandler import PetNameHandler
 
 application = tornado.web.Application([
         (r"/", MainHandler),
-        (r"/getpetname", PetNameHandler),
+        (r"/getpetnames", PetNameHandler),
 
     ],
 
