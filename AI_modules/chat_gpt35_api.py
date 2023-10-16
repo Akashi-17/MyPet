@@ -10,10 +10,10 @@ def generate(description, style):
 
     response = openai.ChatCompletion.create( 
         model="gpt-3.5-turbo", 
-        messages=messages 
+        messages=messages,
     ) 
 
     print(f"\nChatGPT response: {response}") 
     reply = response.choices[0].message.content 
     print(f"\nChatGPT reply: {reply}") 
-    return reply.split('\n')
+    return reply

@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello Cats Website</title>
-  <link rel="stylesheet" type="text/css" href="static/css/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>PetName AI</title>
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+	<link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 
 <body>
-  <div class="header">
-    <div style="padding: 15px;">Best for cats</div>
-  </div>
+	<div class="header">
+		<div style="padding-left: 10px; font-size: 40px;">🐱</div> <!-- Black and white cat emoji -->
+		<div style="padding-left: 10px;">The best names for your pets</div>
+	</div>
 
-  <div class="container">
-    <h1 style="text-align: center;">Get a name for your pet!!!</h1>
+	<div class="main_container">
+		<h1 style="text-align: center;">Get a name for your pet!!!</h1>
+		<div class="descrip_container">
+			<div style="padding: 5px; font-size: 24px;">Write a description of your pet:</div>
+			<textarea id="text-field" class="input-field" type="text"> </textarea>
+		</div>
+		<button id="ok-button" class="button">Generate petname</button>
+		<div class="output_text"> </div>
+	</div>
 
-    <input id="text-field" class="input-field" type="text"> <!-- Add the class for styling -->
-
-    <div class="output-container"> <!-- Add a container for generated names-->
-    </div>
-    <button id="ok-button" class="button">Generate petname</button>
-  </div>
-
-  <script src="static/js/scripts.js"></script>
+	<script src="static/js/scripts.js"></script>
 </body>
 </html>
