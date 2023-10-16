@@ -2,7 +2,7 @@
 
 var textField = document.getElementById('text-field');
 var okButton = document.getElementById('ok-button');
-var outputContainer = document.querySelector('.output-container'); // Get the output container element
+var output_text_elem = document.querySelector('.output_text'); // Get the output container element
 
 okButton.addEventListener('click', function() {
 	// Get the text from the input field
@@ -35,12 +35,6 @@ okButton.addEventListener('click', function() {
 
 
 function display_names(data) {
-	// Clear the output container before adding new divs
-	outputContainer.innerHTML = '';
-	// Loop through the generated names and create a div for each name
-	data.names.forEach(function(name) {
-	var nameDiv = document.createElement('div');
-	nameDiv.textContent = name;
-	outputContainer.appendChild(nameDiv);
-	});
-}
+	output_text_elem.textContent = data.names;
+};
+
